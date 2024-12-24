@@ -1,0 +1,12 @@
+.hamburgerMenu{
+    @apply bg-[#2a76e8] text-white
+}
+.hamburger-ul-li{
+    @apply px-[30px] py-[10px]
+}
+
+@media (min-width: 771px){
+    .hamburgerMenu{
+        @apply hidden
+    }
+}

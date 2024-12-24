@@ -1,0 +1,148 @@
+/* Navbar Styles */
+.navbar-parent {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-parent b {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-right: 2rem; /* Add some space between the logo and the navigation */
+}
+
+.pages {
+  flex: 1;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;  /* Center the links */
+}
+
+.pages-ul {
+  display: flex;
+  justify-content: space-between;  /* Evenly distribute the links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pages-ul-li {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 70px;  /* Add some padding to create space between items */
+  font-weight: 500;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.pages-ul-li:hover {
+  color: #007bff;
+}
+
+.pages-ul-li-underliningItems {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+.pages-ul-li:hover .pages-ul-li-underliningItems {
+  width: 100%;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hamburger-icon,
+.close-icon {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hamburger-icon {
+  opacity: 1;
+}
+
+.close-icon {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+
+.icon-wrapper.open .hamburger-icon {
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.icon-wrapper.open .close-icon {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 50;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.hamburger-menu.open {
+  opacity: 1;
+  max-height: 300px;
+}
+
+/* Media Queries */
+
+/* Desktop view */
+@media (min-width: 1050px) {
+  .pages {
+    display: flex;
+  }
+}
+
+@media (max-width: 1049px) and (min-width: 992px) {
+  .pages {
+    display: flex;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 770px) {
+  .pages {
+    display: flex;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 770px) {
+  .pages {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

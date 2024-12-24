@@ -1,0 +1,124 @@
+.update-container {
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ffffff, #f7f9fc);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.update-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+label#title {
+  font-size: 20px;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+label#note {
+  font-size: 20px;
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  outline: none;
+  background: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button.update-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.update-button:hover {
+  background-color: #45a049;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Error message styling */
+.error-message {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+/* Styling for the "Update Note" title */
+.update-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Success message styling */
+.success-message {
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+}
